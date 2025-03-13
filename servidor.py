@@ -3,6 +3,7 @@ import socket
 def servidor():
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server_socket.bind(("0.0.0.0", 12345))
+    #Bin 0.0.0.0 significa que acepta cualquier IP
     server_socket.listen(5)
 
     print("[SERVIDOR] Esperando conexiones...")
